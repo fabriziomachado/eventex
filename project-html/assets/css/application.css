@@ -1,5 +1,5 @@
 html, body {
-    background: url(../images/404background.jpg);
+    background: url(../images/background.jpg);
     font-family: 'Myriad Pro', Tahoma, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -23,16 +23,6 @@ body h1 {
     margin-top:55px;
     padding-left:0px;
 }
-.boxes {
-    -moz-border-radius: 15px;
-    border-radius: 10px;
-    background-color:#E3EAEF; 
-    font-size: 25px;
-    color:#7A7A7A;
-    padding:15px;
-    margin-left:130px; 
-}
-
 #contact-info {
     border-left-color:#7A7A7A;
     border-left-style:solid;
@@ -48,6 +38,15 @@ body h1 {
 
 #logo {
     float:left;
+}
+.button-g {
+    -moz-border-radius: 15px;
+    border-radius: 10px;
+    background-color:#E3EAEF; 
+    font-size: 25px;
+    color:#7A7A7A;
+    padding:15px;
+    margin-left:130px; 
 }
 #box-main {
     -moz-border-radius: 15px;
