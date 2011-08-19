@@ -9,19 +9,12 @@ body h1 {
     font-weight:bold;
     line-height:45px;
     color: #fff;
-}
-#all{
-  margin-bottom:0;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:0;
-  position:relative;
-  width:912px;
+    margin-bottom:0px;
 }
 #header{ 
     height:125px;
     margin-top:55px;
-    padding-left:0px;
+
 }
 #contact-info {
     border-left-color:#7A7A7A;
@@ -36,24 +29,21 @@ body h1 {
     padding-top:20px;
 }
 
-#logo {
-    float:left;
+
+#box-main {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color:#0d0e11;
+    text-align: center;
+    padding-top: 25px
 }
-.button-g {
+#button {
     -moz-border-radius: 15px;
     border-radius: 10px;
     background-color:#E3EAEF; 
     font-size: 25px;
     color:#7A7A7A;
-    padding:15px;
-    margin-left:130px; 
-}
-#box-main {
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    background-color:#0d0e11;
-    height:280px;
-    padding: 20px 30px;
-    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
