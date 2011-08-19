@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <meta charset="utf-8">
+         <title>Bem vindo ao EventeX</title>
+         <link type='text/css' href='{{ STATIC_URL }}css/libs/blueprint/screen.css' rel='stylesheet' media='screen' />
+         <link type='text/css' href='{{ STATIC_URL }}css/application.css' rel='stylesheet' media='screen' />
+         <!--[if lt IE 8]><link rel="stylesheet" href="assets/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    </head>
+    <body class="container">
+        <div id="header" class="prepend-2 span-24 last">
+            <img src="{{ STATIC_URL }}img/logo-top2.png" alt="Eventex" id="logo" class="span-6" height="100"/>
+            <div id="contact-info" class="span-4 last">
+                <span>(048) 3431.0000</span><br/>
+                <span>fabrizio.machado@gmail.com</span>
+            </div>
+        </div>
+        <div id="main" class="prepend-2 span-18 last">
+            <div id="box-main" class="span-20">
+                <h1>Bem vindo</h1>
+            
+                <video class="video" poster="http://media.html5media.info/poster.jpg" width="618" height="347" controls preload>
+                    <source src="http://media.html5media.info/video.mp4" media="only screen and (min-device-width: 960px)"></source>
+                    <source src="http://media.html5media.info/video.iphone.mp4" media="only screen and (max-device-width: 960px)"></source>
+                    <source src="http://media.html5media.info/video.ogv"></source>
+                </video>
+
+                <p>O evento mais sensacional do ano depois do Dev in Rio!<br />
+                Você não pode perder esta oportunidade!</p>
+
+                 <div id="main-button" class="prepend-2 span-20">
+                    <div id="button" class="span-16">Abertura das inscrições em 15/05/2011</div>
+                 </div>                
+                
+            </div>       
+       </div>
+      
+
+         <!-- This line is all you need to enable HTML5 video and audio tags in all major browsers! 
+              https://github.com/etianen/html5media -->
+         <script src="http://api.html5media.info/1.1.4/html5media.min.js"></script>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+         <!-- This line is all you need to enable HTML5 tags in all major browsers! -->
+         <script type="text/javascript" src="{{ STATIC_URL }}js/libs/modernizr-2.0.6.js"></script>
+
+
+    </body>
+</html>
