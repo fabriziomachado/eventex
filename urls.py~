@@ -24,7 +24,7 @@ urlpatterns = patterns('django.views.generic.simple',
 
 )
 
-urlpatterns	+= staticfiles_urlpatterns()
+#urlpatterns	+= staticfiles_urlpatterns()
 
 from django.conf import settings
 if settings.DEBUG:
