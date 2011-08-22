@@ -1,5 +1,5 @@
 html, body {
-    background: url(../images/background.jpg);
+    background: url(../img/background.jpg);
     font-family: 'Myriad Pro', Tahoma, sans-serif;
     color: #fff;
     font-size: 16px;
@@ -16,6 +16,24 @@ body h1 {
     margin-top:55px;
 
 }
+
+form  {
+
+  text-align: left;
+  margin: 20px 0px 30px 20px;
+}
+
+form label {
+  display: block;
+  line-height:5px;
+
+}
+
+.errorlist {
+  padding:0px;
+  font-size:10px;
+}
+
 #contact-info {
     border-left-color:#7A7A7A;
     border-left-style:solid;

@@ -20,16 +20,16 @@ urlpatterns = patterns('django.views.generic.simple',
     # url(r'^admin/', include(admin.site.urls)),
     #url(r'^$', 'core.views.homepage', name='homepage'),
     (r'^$', 'direct_to_template', {'template':'index.html'}),
-    #url(r'^inscricao/', include('subscription.urls', namespace='subscription')),
+    (r'^inscricao/', include('subscription.urls', namespace='subscription')),
 
 )
 
 urlpatterns	+= staticfiles_urlpatterns()
 
-#from django.conf import settings
-#if settings.DEBUG:
-#    urlpatterns += patterns('',
-#        (r'^media/(?P<path>.*)$', 'django.views.static.serve',
-#        { 'document_root': settings.MEDIA_ROOT }),
-#    )
+from django.conf import settings
+if settings.DEBUG:
+    urlpatterns += patterns('',
+        (r'^media/(?P<path>.*)$', 'django.views.static.serve',
+        { 'document_root': settings.MEDIA_ROOT }),
+    )
 

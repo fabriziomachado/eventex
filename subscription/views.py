@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 
 from subscription.forms import SubscriptionForm
 from subscription.models import Subscription
-#from subscription.utils import send_subscription_email
+from subscription.utils import send_subscription_email
 
 def new(request):
     form = SubscriptionForm()
@@ -20,8 +20,8 @@ def create(request):
         return render_to_response('subscription/new.html', context)
 
     subscription = form.save()
-    # notifica o cadastro
-    #send_subscription_email(subscription)
+    
+    send_subscription_email(subscription)
     return HttpResponseRedirect(reverse('subscription:success', args=[ subscription.pk ]))
 
 def subscribe(request):
