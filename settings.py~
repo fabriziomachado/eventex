@@ -1,6 +1,8 @@
 import os
 PROJECT_DIR = os.path.dirname(__file__)
 
+DEFAULT_FROM_EMAIL = 'fabrizio.machado@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Django settings for eventex project.
 
