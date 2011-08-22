@@ -8,7 +8,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('django.views.generic.simple',
     # Examples:
     # url(r'^$', 'eventex.views.home', name='home'),
     # url(r'^eventex/', include('eventex.foo.urls')),
@@ -18,9 +18,18 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    (r'^$', homepage),
+    #url(r'^$', 'core.views.homepage', name='homepage'),
+    (r'^$', 'direct_to_template', {'template':'index.html'}),
+    (r'^inscricao/', include('subscription.urls', namespace='subscription')),
 
 )
 
 urlpatterns	+= staticfiles_urlpatterns()
+
+#from django.conf import settings
+#if settings.DEBUG:
+#    urlpatterns += patterns('',
+#        (r'^media/(?P<path>.*)$', 'django.views.static.serve',
+#        { 'document_root': settings.MEDIA_ROOT }),
+#    )
 
