@@ -1,0 +1,20 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "fabrizio", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-08-26 16:36:49", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$3b92a$6ebeed9dd32c689ee2a9b4ae2c2a541f0d463810", 
+            "email": "fabrizio.machado@gmail.com", 
+            "date_joined": "2011-08-17 17:33:36"
+        }
+    }
+]
