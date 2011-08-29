@@ -8,7 +8,12 @@ from subscription.models import Subscription
 from subscription.utils import send_subscription_email
 
 def new(request):
-    form = SubscriptionForm()
+    form = SubscriptionForm(initial={
+        'name': 'Entre o seu nome',
+        'cpf': 'Digite o seu CPF sem pontos',
+        'email': 'Informe o seu email',
+        'phone': '21-96186180',
+    })
     context = RequestContext(request, {'form': form})
     return render_to_response('subscription/new.html', context)
 
